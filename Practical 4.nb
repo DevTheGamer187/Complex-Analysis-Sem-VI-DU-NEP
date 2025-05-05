@@ -1,0 +1,406 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     14349,        396]
+NotebookOptionsPosition[     12342,        353]
+NotebookOutlinePosition[     12752,        369]
+CellTagsIndexPosition[     12709,        366]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+NAME : PARTH KUMAR SINGH
+COLLEGE ROLL NO.: 2232139
+UNIVERSITY ROLL NO.: 22036563034
+COURSE : B.Sc. (Hons.) Mathematics/Year3/Complex Analysis
+SECTION : A\
+\>", "Text",
+ CellChangeTimes->{{3.952917953744608*^9, 3.952918045834371*^9}},
+ FontColor->RGBColor[1, 0, 0],
+ Background->RGBColor[
+  0.94, 0.91, 0.88],ExpressionUUID->"fc36d6b2-b7c2-4eaa-960f-fe01e061b529"],
+
+Cell[TextData[{
+ StyleBox["PRACTICAL 4 : Show that the image of the open disk ",
+  FontColor->RGBColor[0, 0, 1],
+  Background->GrayLevel[0.85]],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["D", "1"], TraditionalForm]],
+  FormatType->TraditionalForm,
+  FontColor->RGBColor[0, 0, 1],
+  Background->GrayLevel[0.85],ExpressionUUID->
+  "1b26a29b-2035-433d-b5a7-07880d9b943f"],
+ StyleBox["(-1,-i)= {z : |z+1+i|<1} under the linear transformation w = f(z) \
+= (3-4i) z + 6 + 2i is the open disk:\n",
+  FontColor->RGBColor[0, 0, 1],
+  Background->GrayLevel[0.85]],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["D", "5"], TraditionalForm]],
+  FormatType->TraditionalForm,
+  FontColor->RGBColor[0, 0, 1],
+  Background->GrayLevel[0.85],ExpressionUUID->
+  "561f3b2e-51a7-4af3-8203-fa25d78db8be"],
+ StyleBox["(-1+3i) = {w: |w+1-3i|<5}.",
+  FontColor->RGBColor[0, 0, 1],
+  Background->GrayLevel[0.85]]
+}], "Text",
+ CellChangeTimes->{{3.952918963569662*^9, 3.9529189735577016`*^9}, {
+  3.9529190132434406`*^9, 3.952919128188983*^9}, {3.9530376965268307`*^9, 
+  3.953037828339961*^9}},ExpressionUUID->"7335ca6f-04ef-448a-a430-\
+7de180a5727e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"a", "=", 
+  RowBox[{"Region", "[", 
+   RowBox[{
+    RowBox[{"Disk", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "1"}], ",", 
+        RowBox[{"-", "1"}]}], "}"}], ",", "1"}], "]"}], ",", 
+    RowBox[{"Axes", "->", "True"}], ",", 
+    RowBox[{"AxesLabel", "->", 
+     RowBox[{"{", 
+      RowBox[{"\"\<Real Axis\>\"", ",", " ", "\"\<Imaginary Axis\>\""}], 
+      "}"}]}], ",", 
+    RowBox[{"PlotLabel", "->", "\"\<z-plane\>\""}], ",", 
+    RowBox[{"PlotRange", "->", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"-", "2"}], ",", "0.5"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"-", "2"}], ",", "0.5"}], "}"}]}], "}"}]}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.950052351636053*^9, 3.9500523701544714`*^9}, {
+  3.9500524220714755`*^9, 3.9500526485977645`*^9}, {3.950053405593966*^9, 
+  3.950053405946994*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"fd2dce5b-4ad0-48f3-96f9-5c458a370605"],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[
+   DynamicModuleBox[{Typeset`region = HoldComplete[
+     Region[
+      Disk[{-1, -1}, 1], Axes -> True, 
+      AxesLabel -> {"Real Axis", "Imaginary Axis"}, PlotLabel -> "z-plane", 
+      PlotRange -> {{-2, 0.5}, {-2, 0.5}}]]}, 
+    TagBox[{DiskBox[{-1, -1}, 1], {}},
+     MouseAppearanceTag["LinkHand"]],
+    AllowKernelInitialization->False],
+   "RegionGraphics",
+   AutoDelete->True,
+   Editable->False,
+   Selectable->False],
+  Axes->True,
+  AxesLabel->{
+    FormBox["\"Real Axis\"", TraditionalForm], 
+    FormBox["\"Imaginary Axis\"", TraditionalForm]},
+  BaseStyle->{
+    Hue[0.6, 0.3, 0.95]},
+  PlotLabel->FormBox["\"z-plane\"", TraditionalForm],
+  PlotRange->{{-2, 0.5}, {-2, 0.5}}]], "Output",
+ CellChangeTimes->{{3.9500523612964516`*^9, 3.950052370741892*^9}, {
+   3.950052436030011*^9, 3.9500524644810476`*^9}, {3.950052559326766*^9, 
+   3.950052649616069*^9}, 3.950053406505148*^9, 3.951293429097306*^9, 
+   3.9529955206243863`*^9, 3.95299574068913*^9, 3.9530378636419573`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"8610d29d-b63b-4b1c-900f-a29188360e0b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"z", "=", 
+  RowBox[{"x", "+", "\[ImaginaryI]y"}]}]], "Input",
+ CellChangeTimes->{{3.9500526780180273`*^9, 3.9500527065787497`*^9}, {
+  3.9500528425634537`*^9, 3.9500528438664527`*^9}, {3.9500529572943616`*^9, 
+  3.9500529607972193`*^9}, {3.950053099382772*^9, 3.950053101327074*^9}, {
+  3.9500532647103915`*^9, 3.950053291126796*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"cb41088e-caf4-4d7f-9add-0446321b07de"],
+
+Cell[BoxData[
+ RowBox[{"x", "+", "\[ImaginaryI]y"}]], "Output",
+ CellChangeTimes->{
+  3.9500527195448437`*^9, 3.9500528446369905`*^9, 3.9500529722659454`*^9, 
+   3.950053106593073*^9, {3.950053267786453*^9, 3.950053291625638*^9}, 
+   3.9500534097790604`*^9, 3.9512934344202137`*^9, 3.9529955248754997`*^9, 
+   3.952995746383712*^9, 3.9530378638273115`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"e4789513-ff95-4b1d-a0c6-e47cb8fdc693"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"w", "=", 
+  RowBox[{"ComplexExpand", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"3", "-", 
+       RowBox[{"4", "\[ImaginaryI]"}]}], ")"}], "z"}], "+", 
+    RowBox[{"(", 
+     RowBox[{"6", "+", 
+      RowBox[{"2", "\[ImaginaryI]"}]}], ")"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.95005342157913*^9, 3.9500534726934624`*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"8673ae56-392f-41f3-9303-fefc1cd5f971"],
+
+Cell[BoxData[
+ RowBox[{"6", "+", 
+  RowBox[{"3", " ", "x"}], "+", 
+  RowBox[{"\[ImaginaryI]", " ", 
+   RowBox[{"(", 
+    RowBox[{"2", "-", 
+     RowBox[{"4", " ", "x"}], "-", 
+     RowBox[{"4", " ", "\[ImaginaryI]y"}]}], ")"}]}], "+", 
+  RowBox[{"3", " ", "\[ImaginaryI]y"}]}]], "Output",
+ CellChangeTimes->{3.950053453591774*^9, 3.9512934523030252`*^9, 
+  3.952995527920086*^9, 3.9529957487037835`*^9, 3.9530378638794565`*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"b372469b-10c1-4c58-9faa-38328083eaca"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"b", "=", 
+  RowBox[{"Region", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"TransformedRegion", "[", 
+     RowBox[{"a", ",", 
+      RowBox[{"Function", "[", 
+       RowBox[{"p", ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"6", "+", 
+           RowBox[{"3", 
+            RowBox[{"p", "[", 
+             RowBox[{"[", "1", "]"}], "]"}]}], "+", 
+           RowBox[{"4", 
+            RowBox[{"p", "[", 
+             RowBox[{"[", "2", "]"}], "]"}]}]}], ",", 
+          RowBox[{"2", "-", 
+           RowBox[{"4", 
+            RowBox[{"p", "[", 
+             RowBox[{"[", "1", "]"}], "]"}]}], "+", 
+           RowBox[{"3", 
+            RowBox[{"p", "[", 
+             RowBox[{"[", "2", "]"}], "]"}]}]}]}], "}"}]}], "]"}]}], "]"}], 
+    ",", "\[IndentingNewLine]", 
+    RowBox[{"PlotLabel", "->", "\"\<w-plane\>\""}], ",", 
+    RowBox[{"PlotRange", "->", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"-", "7"}], ",", "5"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"-", "3"}], ",", "9"}], "}"}]}], "}"}]}]}], 
+   "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellChangeTimes->{{3.950053523125156*^9, 3.950053567397716*^9}, {
+  3.951293579024073*^9, 3.951293726963298*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"02a40f21-3c45-4939-b973-1aa865e0204a"],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[
+   DynamicModuleBox[{Typeset`region = HoldComplete[
+     Region[
+      Region[
+       Disk[{-1, 3}, 5], {
+       Axes -> True, AxesLabel -> {"Real Axis", "Imaginary Axis"}, PlotLabel -> 
+        "z-plane", PlotRange -> {{-2, 0.5}, {-2, 0.5}}}], {
+      Axes -> True, AxesLabel -> {"Real Axis", "Imaginary Axis"}, PlotLabel -> 
+       "w-plane", PlotRange -> {{-7, 5}, {-3, 9}}}]]}, 
+    TagBox[{DiskBox[{-1, 3}, 5], {}},
+     MouseAppearanceTag["LinkHand"]],
+    AllowKernelInitialization->False],
+   "RegionGraphics",
+   AutoDelete->True,
+   Editable->False,
+   Selectable->False],
+  Axes->True,
+  AxesLabel->{
+    FormBox["\"Real Axis\"", TraditionalForm], 
+    FormBox["\"Imaginary Axis\"", TraditionalForm]},
+  BaseStyle->{
+    Hue[0.6, 0.3, 0.95]},
+  PlotLabel->FormBox["\"z-plane\"", TraditionalForm],
+  PlotRange->{{-2, 0.5}, {-2, 0.5}}]], "Output",
+ CellChangeTimes->{3.9512937283630075`*^9, 3.9530378639327884`*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"ad7f6395-499c-4278-bbe8-c7a112c04177"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"RegionCentroid", "[", "b", "]"}]], "Input",
+ CellChangeTimes->{{3.951293782245318*^9, 3.9512937876405325`*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"0c8837c0-bf7c-4759-b032-b00eb04958bd"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"-", "1.`"}], ",", "3.`"}], "}"}]], "Output",
+ CellChangeTimes->{3.95129378798748*^9, 3.9530378639989543`*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"fbfd9650-3105-4c91-beda-8275a315ffc6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"radius", "=", 
+  SqrtBox[
+   FractionBox[
+    RowBox[{"Area", "[", "b", "]"}], "\[Pi]"]]}]], "Input",
+ CellChangeTimes->{{3.9512938069635534`*^9, 3.95129387307207*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"db3bdc22-1683-4f48-a3a5-ccf49f9c0566"],
+
+Cell[BoxData["5.`"], "Output",
+ CellChangeTimes->{3.9512938282047873`*^9, 3.951293874930356*^9, 
+  3.9530378640228257`*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"f5c31dc8-f976-499b-93cd-3d1fe9f1f446"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"GraphicsRow", "[", 
+  RowBox[{"{", 
+   RowBox[{"a", ",", "b"}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.9512938883775425`*^9, 3.9512939214656897`*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"ccdb4945-ffd4-401b-9d2c-02027568f87c"],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {InsetBox[
+     FormBox[
+      GraphicsBox[
+       TagBox[
+        DynamicModuleBox[{Typeset`region = HoldComplete[
+          Region[
+           Disk[{-1, -1}, 1], Axes -> True, 
+           AxesLabel -> {"Real Axis", "Imaginary Axis"}, PlotLabel -> 
+           "z-plane", PlotRange -> {{-2, 0.5}, {-2, 0.5}}]]}, 
+         TagBox[{DiskBox[{-1, -1}, 1], {}},
+          MouseAppearanceTag["LinkHand"]],
+         AllowKernelInitialization->False],
+        "RegionGraphics",
+        AutoDelete->True,
+        Editable->False,
+        Selectable->False],
+       Axes->True,
+       AxesLabel->{
+         FormBox["\"Real Axis\"", TraditionalForm], 
+         FormBox["\"Imaginary Axis\"", TraditionalForm]},
+       BaseStyle->{
+         Hue[0.6, 0.3, 0.95]},
+       PlotLabel->FormBox["\"z-plane\"", TraditionalForm],
+       PlotRange->{{-2, 0.5}, {-2, 0.5}}],
+      TraditionalForm], {192., -177.45}, {Center, Center}, {360., 338.},
+     BaseStyle->{Graphics3DBoxOptions -> {SphericalRegion -> False}}], 
+    InsetBox[
+     FormBox[
+      GraphicsBox[
+       TagBox[
+        DynamicModuleBox[{Typeset`region = HoldComplete[
+          Region[
+           Region[
+            Disk[{-1, 3}, 5], {
+            Axes -> True, AxesLabel -> {"Real Axis", "Imaginary Axis"}, 
+             PlotLabel -> "z-plane", PlotRange -> {{-2, 0.5}, {-2, 0.5}}}], {
+           Axes -> True, AxesLabel -> {"Real Axis", "Imaginary Axis"}, 
+            PlotLabel -> "w-plane", PlotRange -> {{-7, 5}, {-3, 9}}}]]}, 
+         TagBox[{DiskBox[{-1, 3}, 5], {}},
+          MouseAppearanceTag["LinkHand"]],
+         AllowKernelInitialization->False],
+        "RegionGraphics",
+        AutoDelete->True,
+        Editable->False,
+        Selectable->False],
+       Axes->True,
+       AxesLabel->{
+         FormBox["\"Real Axis\"", TraditionalForm], 
+         FormBox["\"Imaginary Axis\"", TraditionalForm]},
+       BaseStyle->{
+         Hue[0.6, 0.3, 0.95]},
+       PlotLabel->FormBox["\"z-plane\"", TraditionalForm],
+       PlotRange->{{-2, 0.5}, {-2, 0.5}}],
+      TraditionalForm], {576., -177.45}, {Center, Center}, {360., 338.},
+     BaseStyle->{Graphics3DBoxOptions -> {SphericalRegion -> False}}]}, {}},
+  ImageSize->{
+    UpTo[600], Automatic},
+  PlotRange->{{0, 768.}, {-354.9, 0}},
+  PlotRangePadding->{6, 5}]], "Output",
+ CellChangeTimes->{3.951293922709818*^9, 3.9530378642470245`*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"ed5c2b9f-d728-4ef6-9060-be79f148fab7"]
+}, Open  ]]
+},
+WindowSize->{571.8, 509.4},
+WindowMargins->{{284.4, Automatic}, {Automatic, 47.4}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (January 30, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"66c2024d-8e8b-4450-b40b-81689b6ad66c"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 373, 10, 143, "Text",ExpressionUUID->"fc36d6b2-b7c2-4eaa-960f-fe01e061b529"],
+Cell[934, 32, 1121, 29, 81, "Text",ExpressionUUID->"7335ca6f-04ef-448a-a430-7de180a5727e"],
+Cell[CellGroupData[{
+Cell[2080, 65, 1021, 29, 67, "Input",ExpressionUUID->"fd2dce5b-4ad0-48f3-96f9-5c458a370605"],
+Cell[3104, 96, 1106, 27, 354, "Output",ExpressionUUID->"8610d29d-b63b-4b1c-900f-a29188360e0b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4247, 128, 436, 7, 28, "Input",ExpressionUUID->"cb41088e-caf4-4d7f-9add-0446321b07de"],
+Cell[4686, 137, 434, 7, 32, "Output",ExpressionUUID->"e4789513-ff95-4b1d-a0c6-e47cb8fdc693"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5157, 149, 451, 12, 28, "Input",ExpressionUUID->"8673ae56-392f-41f3-9303-fefc1cd5f971"],
+Cell[5611, 163, 505, 11, 32, "Output",ExpressionUUID->"b372469b-10c1-4c58-9faa-38328083eaca"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6153, 179, 1362, 38, 105, "Input",ExpressionUUID->"02a40f21-3c45-4939-b973-1aa865e0204a"],
+Cell[7518, 219, 1040, 27, 354, "Output",ExpressionUUID->"ad7f6395-499c-4278-bbe8-c7a112c04177"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8595, 251, 213, 3, 28, "Input",ExpressionUUID->"0c8837c0-bf7c-4759-b032-b00eb04958bd"],
+Cell[8811, 256, 239, 5, 32, "Output",ExpressionUUID->"fbfd9650-3105-4c91-beda-8275a315ffc6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9087, 266, 270, 6, 56, "Input",ExpressionUUID->"db3bdc22-1683-4f48-a3a5-ccf49f9c0566"],
+Cell[9360, 274, 201, 3, 32, "Output",ExpressionUUID->"f5c31dc8-f976-499b-93cd-3d1fe9f1f446"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9598, 282, 259, 5, 28, "Input",ExpressionUUID->"ccdb4945-ffd4-401b-9d2c-02027568f87c"],
+Cell[9860, 289, 2466, 61, 297, "Output",ExpressionUUID->"ed5c2b9f-d728-4ef6-9060-be79f148fab7"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

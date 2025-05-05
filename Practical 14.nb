@@ -1,0 +1,160 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5149,        150]
+NotebookOptionsPosition[      4243,        127]
+NotebookOutlinePosition[      4665,        143]
+CellTagsIndexPosition[      4622,        140]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+NAME : PARTH KUMAR SINGH
+COLLEGE ROLL NO.: 2232139
+UNIVERSITY ROLL NO.: 22036563034
+COURSE : B.Sc. (Hons.) Mathematics/Year3/Complex Analysis
+SECTION : A\
+\>", "Text",
+ CellChangeTimes->{{3.952917953744608*^9, 3.952918045834371*^9}},
+ FontColor->RGBColor[1, 0, 0],
+ Background->RGBColor[
+  0.94, 0.91, 0.88],ExpressionUUID->"022154cb-04e0-4eb0-92eb-2f70dc414d9e"],
+
+Cell[TextData[{
+ StyleBox["PRACTICAL 14 : Locate the poles of f(z) = ",
+  FontColor->RGBColor[0, 0, 1],
+  Background->GrayLevel[0.85]],
+ Cell[BoxData[
+  FormBox[
+   FractionBox["1", 
+    RowBox[{
+     SuperscriptBox["z", "4"], "+", 
+     RowBox[{"26", 
+      SuperscriptBox["z", "2"]}], "+", "5"}]], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "09bafc68-d984-4da2-aaee-4a93f18f0526"],
+ " and specify their order."
+}], "Text",
+ CellChangeTimes->{{3.952918963569662*^9, 3.9529189735577016`*^9}, {
+  3.9529190132434406`*^9, 3.952919128188983*^9}, {3.9530376965268307`*^9, 
+  3.953037828339961*^9}, {3.9554379368878665`*^9, 3.9554379880058813`*^9}},
+ FontColor->RGBColor[0, 0, 1],
+ Background->GrayLevel[
+  0.85],ExpressionUUID->"95dda984-fa54-41c9-8a09-51a14e705d1d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", "z_", "]"}], ":=", 
+   FractionBox["1", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"5", 
+       SuperscriptBox["z", "4"]}], "+", 
+      RowBox[{"26", 
+       SuperscriptBox["z", "2"]}], "+", "5"}], ")"}]]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{
+    FractionBox["1", 
+     RowBox[{"f", "[", "z", "]"}]], "==", "0"}], ",", "z"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.9554380376720867`*^9, 3.955438070357066*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"d2e2702f-3625-41fa-b40f-c30c763dbbe9"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"z", "\[Rule]", 
+     RowBox[{"-", 
+      FractionBox["\[ImaginaryI]", 
+       SqrtBox["5"]]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", "\[Rule]", 
+     FractionBox["\[ImaginaryI]", 
+      SqrtBox["5"]]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", "\[Rule]", 
+     RowBox[{
+      RowBox[{"-", "\[ImaginaryI]"}], " ", 
+      SqrtBox["5"]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", "\[Rule]", 
+     RowBox[{"\[ImaginaryI]", " ", 
+      SqrtBox["5"]}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.955438072458253*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"8c96e481-cf28-4800-bfe7-39c17689010e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Text", "[", 
+  "\"\<The function f has poles at z=-\!\(\*FractionBox[\(i\), \
+SqrtBox[\(5\)]]\),z=\!\(\*FractionBox[\(i\), \
+SqrtBox[\(5\)]]\),z=-i\!\(\*SqrtBox[\(5\)]\) and at z=i\!\(\*SqrtBox[\(5\)]\) \
+of order 1.\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.9554380749000015`*^9, 3.9554381205050845`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"e833d033-69a4-4ca8-8f24-dd0d285be21a"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[BoxData[
+   FormBox["\<\"The function f has poles at z=-\\!\\(\\*FractionBox[\\(i\\), \
+SqrtBox[\\(5\\)]]\\),z=\\!\\(\\*FractionBox[\\(i\\), \
+SqrtBox[\\(5\\)]]\\),z=-i\\!\\(\\*SqrtBox[\\(5\\)]\\) and at \
+z=i\\!\\(\\*SqrtBox[\\(5\\)]\\) of order 1.\"\>", TextForm]], "InlineText",
+   ExpressionUUID->"1430c2c7-2270-45c1-bca9-4fba63261c0f"],
+  Text["The function f has poles at z=-\!\(\*FractionBox[\(i\), \
+SqrtBox[\(5\)]]\),z=\!\(\*FractionBox[\(i\), \
+SqrtBox[\(5\)]]\),z=-i\!\(\*SqrtBox[\(5\)]\) and at z=i\!\(\*SqrtBox[\(5\)]\) \
+of order 1."]]], "Output",
+ CellChangeTimes->{3.955438076773978*^9, 3.95543812475484*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"97ee2d0b-3109-4e1c-b0f8-6c8ebaebe5c4"]
+}, Open  ]]
+},
+WindowSize->{574.8, 609.6},
+WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (January 30, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"45cebcd9-14fe-4b40-8fd2-d0da21e8bf5f"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 373, 10, 143, "Text",ExpressionUUID->"022154cb-04e0-4eb0-92eb-2f70dc414d9e"],
+Cell[934, 32, 788, 20, 55, "Text",ExpressionUUID->"95dda984-fa54-41c9-8a09-51a14e705d1d"],
+Cell[CellGroupData[{
+Cell[1747, 56, 596, 18, 93, "Input",ExpressionUUID->"d2e2702f-3625-41fa-b40f-c30c763dbbe9"],
+Cell[2346, 76, 690, 22, 52, "Output",ExpressionUUID->"8c96e481-cf28-4800-bfe7-39c17689010e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3073, 103, 411, 7, 112, "Input",ExpressionUUID->"e833d033-69a4-4ca8-8f24-dd0d285be21a"],
+Cell[3487, 112, 740, 12, 68, "Output",ExpressionUUID->"97ee2d0b-3109-4e1c-b0f8-6c8ebaebe5c4"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

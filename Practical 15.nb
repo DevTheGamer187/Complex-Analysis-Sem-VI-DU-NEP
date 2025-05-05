@@ -1,0 +1,259 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8826,        249]
+NotebookOptionsPosition[      7068,        212]
+NotebookOutlinePosition[      7490,        228]
+CellTagsIndexPosition[      7447,        225]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+NAME : PARTH KUMAR SINGH
+COLLEGE ROLL NO.: 2232139
+UNIVERSITY ROLL NO.: 22036563034
+COURSE : B.Sc. (Hons.) Mathematics/Year3/Complex Analysis
+SECTION : A\
+\>", "Text",
+ CellChangeTimes->{{3.952917953744608*^9, 3.952918045834371*^9}},
+ FontColor->RGBColor[1, 0, 0],
+ Background->RGBColor[
+  0.94, 0.91, 0.88],ExpressionUUID->"ebc849eb-69a0-43c3-87bd-29870a8afcb5"],
+
+Cell[TextData[{
+ StyleBox["PRACTICAL 15 : Locate the zero and poles of g(z) = ",
+  FontColor->RGBColor[0, 0, 1],
+  Background->GrayLevel[0.85]],
+ Cell[BoxData[
+  FormBox[
+   FractionBox[
+    RowBox[{"\[Pi]", " ", "cot", 
+     RowBox[{"(", "\[Pi]t", ")"}]}], 
+    SuperscriptBox["z", "2"]], TraditionalForm]],
+  FormatType->TraditionalForm,
+  FontColor->RGBColor[0, 0, 1],
+  Background->GrayLevel[0.85],ExpressionUUID->
+  "c8fc45e2-3c23-4056-81c5-de678d70b6f0"],
+ StyleBox[" and determine their order. Also justify that Res(g,0)= ",
+  FontColor->RGBColor[0, 0, 1],
+  Background->GrayLevel[0.85]],
+ Cell[BoxData[
+  FormBox[
+   FractionBox[
+    RowBox[{"-", 
+     SuperscriptBox["\[Pi]", "2"]}], "3"], TraditionalForm]],
+  FormatType->TraditionalForm,
+  FontColor->RGBColor[0, 0, 1],
+  Background->GrayLevel[0.85],ExpressionUUID->
+  "a0810b0c-b76d-4b7c-8f2a-c107b08e01eb"],
+ StyleBox[".",
+  FontColor->RGBColor[0, 0, 1],
+  Background->GrayLevel[0.85]]
+}], "Text",
+ CellChangeTimes->{{3.952918963569662*^9, 3.9529189735577016`*^9}, {
+  3.9529190132434406`*^9, 3.952919128188983*^9}, {3.9530376965268307`*^9, 
+  3.953037828339961*^9}, {3.955438163992507*^9, 
+  3.9554382322012806`*^9}},ExpressionUUID->"faf92a17-f4bd-425b-8beb-\
+11f303b68407"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", "z_", "]"}], ":=", 
+   FractionBox[
+    RowBox[{"Pi", " ", 
+     RowBox[{"Cot", "[", 
+      RowBox[{"Pi", " ", "z"}], "]"}]}], 
+    SuperscriptBox["z", "2"]]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Cot", "[", 
+     RowBox[{"Pi", " ", "z"}], "]"}], "==", "0"}], ",", "z"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.955438245310856*^9, 3.9554382912506227`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"d630d19c-6de3-4f05-a742-8e1713c91674"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"z", "\[Rule]", 
+    TemplateBox[{
+      FractionBox[
+       RowBox[{
+         FractionBox["\[Pi]", "2"], "+", 
+         RowBox[{"\[Pi]", " ", 
+           TemplateBox[{"1"}, "C"]}]}], "\[Pi]"], 
+      RowBox[{
+        TemplateBox[{"1"}, "C"], "\[Element]", 
+        TemplateBox[{}, "Integers"]}]},
+     "ConditionalExpression"]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.9554382937302465`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"86a056a3-f0c2-4c96-82a4-7755f54e4f1b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Text", "[", 
+  "\"\<Conclusion: The function f has zero at \
+z=\!\(\*FractionBox[\(\*FractionBox[\(\[Pi]\), \(2\)] + \[Pi]\\\ n\), \(\[Pi]\
+\)]\)(n \[Element] Z) for order 1.\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{
+    FractionBox["1", 
+     RowBox[{"f", "[", "z", "]"}]], "==", "0"}], ",", "z"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.9554382955781546`*^9, 3.955438359097353*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"a1a6541a-50bb-47af-a7a3-bc27c773d270"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[BoxData[
+   FormBox["\<\"Conclusion: The function f has zero at \
+z=\\!\\(\\*FractionBox[\\(\\*FractionBox[\\(\[Pi]\\), \\(2\\)] + \[Pi]\\\\ \
+n\\), \\(\[Pi]\\)]\\)(n \[Element] Z) for order 1.\"\>", TextForm]], 
+   "InlineText",ExpressionUUID->"e4e3481d-c443-4d96-8165-c5da795ff2a3"],
+  Text["Conclusion: The function f has zero at \
+z=\!\(\*FractionBox[\(\*FractionBox[\(\[Pi]\), \(2\)] + \[Pi]\\ n\), \
+\(\[Pi]\)]\)(n \[Element] Z) for order 1."]]], "Output",
+ CellChangeTimes->{3.9554383595722685`*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"74b3c314-bcc1-42a7-ab92-83353e5234e6"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Solve", "ifun", 
+   "\"Inverse functions are being used by \
+\\!\\(\\*RowBox[{\\\"Solve\\\"}]\\), so some solutions may not be found; use \
+Reduce for complete solution information.\"", 2, 4, 1, 29165497928116670511, 
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.9554383596282034`*^9},
+ CellLabel->
+  "During evaluation of \
+In[3]:=",ExpressionUUID->"f43d1262-a799-4adb-ad0f-848b1ceef4ac"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"z", "\[Rule]", "0"}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.9554383596539297`*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"2f64e129-d74b-402a-be63-4e33b2665d4a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Text", "[", 
+  "\"\<Conclusion: The function f1 has pole at z=0 for order 2.\>\"", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.9554383656270995`*^9, 3.955438393546296*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"1ac3f110-fc8f-4b66-b9f7-f71a5f165723"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[BoxData[
+   FormBox["\<\"Conclusion: The function f1 has pole at z=0 for order 2.\"\>",
+     TextForm]], "InlineText",ExpressionUUID->
+   "d01196b2-e09f-40b4-9ef8-fc13db97a71b"],
+  Text["Conclusion: The function f1 has pole at z=0 for order 2."]]], "Output",
+ CellChangeTimes->{3.9554383968278546`*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"7741e325-9237-428e-ab97-f30c7bd1a6e9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Residue", "[", 
+  RowBox[{
+   RowBox[{"f", "[", "z", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", "0"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.955438398098008*^9, 3.955438404192033*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"4bc80910-652d-4838-93e9-9289da0c8d2c"],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  FractionBox[
+   SuperscriptBox["\[Pi]", "2"], "3"]}]], "Output",
+ CellChangeTimes->{3.9554384054470787`*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"10e1e036-f691-437c-a33b-1933a79d69dd"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SeriesCoefficient", "[", 
+  RowBox[{
+   RowBox[{"f", "[", "z", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", "0", ",", 
+     RowBox[{"-", "1"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.955438406556101*^9, 3.9554384176832757`*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"c0920937-bae9-48a2-880b-686ededc7617"],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  FractionBox[
+   SuperscriptBox["\[Pi]", "2"], "3"]}]], "Output",
+ CellChangeTimes->{3.955438418152088*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"2febbde1-cca4-4897-9dab-deee56a9f3c2"]
+}, Open  ]]
+},
+WindowSize->{571.8, 609.6},
+WindowMargins->{{Automatic, -2.3999999999998636`}, {Automatic, 0}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (January 30, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"724d1ce3-f1a8-43dc-ab42-04ace65d26c6"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 373, 10, 143, "Text",ExpressionUUID->"ebc849eb-69a0-43c3-87bd-29870a8afcb5"],
+Cell[934, 32, 1238, 34, 68, "Text",ExpressionUUID->"faf92a17-f4bd-425b-8beb-11f303b68407"],
+Cell[CellGroupData[{
+Cell[2197, 70, 550, 16, 68, "Input",ExpressionUUID->"d630d19c-6de3-4f05-a742-8e1713c91674"],
+Cell[2750, 88, 533, 15, 64, "Output",ExpressionUUID->"86a056a3-f0c2-4c96-82a4-7755f54e4f1b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3320, 108, 530, 11, 151, "Input",ExpressionUUID->"a1a6541a-50bb-47af-a7a3-bc27c773d270"],
+Cell[3853, 121, 622, 10, 50, "Output",ExpressionUUID->"74b3c314-bcc1-42a7-ab92-83353e5234e6"],
+Cell[4478, 133, 451, 11, 46, "Message",ExpressionUUID->"f43d1262-a799-4adb-ad0f-848b1ceef4ac"],
+Cell[4932, 146, 225, 5, 32, "Output",ExpressionUUID->"2f64e129-d74b-402a-be63-4e33b2665d4a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5194, 156, 272, 5, 28, "Input",ExpressionUUID->"1ac3f110-fc8f-4b66-b9f7-f71a5f165723"],
+Cell[5469, 163, 418, 7, 33, "Output",ExpressionUUID->"7741e325-9237-428e-ab97-f30c7bd1a6e9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5924, 175, 305, 7, 28, "Input",ExpressionUUID->"4bc80910-652d-4838-93e9-9289da0c8d2c"],
+Cell[6232, 184, 217, 5, 50, "Output",ExpressionUUID->"10e1e036-f691-437c-a33b-1933a79d69dd"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6486, 194, 348, 8, 28, "Input",ExpressionUUID->"c0920937-bae9-48a2-880b-686ededc7617"],
+Cell[6837, 204, 215, 5, 73, "Output",ExpressionUUID->"2febbde1-cca4-4897-9dab-deee56a9f3c2"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
